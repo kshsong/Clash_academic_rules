@@ -17,15 +17,12 @@
 
 ## 如何使用
 
-### 1. 下载或克隆仓库
-
-```bash
-git clone https://github.com/yourusername/clash-verge-academic-direct.git
-```
+### 1. 下载script.js
 
 ### 2. 将脚本加入到Clash Verge rev 全局扩展脚本中
-![alt text](image.png)
 你可以将`script.js`文件中的代码添加到Clash Verge rev的 Rule 模式配置中。通过脚本入口函数，你可以自动更新现有的规则配置。
+
+![双击-全局扩展脚本](全局扩展脚本-1.png)
 
 ### 3. 修改并自定义规则（可选）
 如果你需要添加其他学术网站，只需在 newRules 数组中添加新的域名规则。例如：
@@ -44,10 +41,13 @@ DIRECT：确保这些网站直接连接，避免通过代理服务器。
 no-resolve：防止域名解析影响代理设置。
 ### 4. 保存并启用配置文件
 将修改后的脚本保存一下，然后点击右上角的小火苗图标-->重新订阅，即可启用脚本。
+![展示全局扩展脚本](全局扩展脚本-2.png)
+
+![启用-全局扩展脚本](全局扩展脚本-3.png)
 
 
-## 致谢
+## 参考资料
 
 [1] https://github.com/clash-verge-rev/clash-verge-rev/issues/1437#issuecomment-2395050752
 
-[2] https://hexiao2001.github.io/2024/12/24/clash%E5%85%A8%E5%B1%80%E6%89%A9%E5%B1%95%E8%84%9A%E6%9C%AC%E9%98%B2%E6%AD%A2%E9%83%A8%E5%88%86%E7%BD%91%E7%AB%99%E4%BD%BF%E7%94%A8%E4%BB%A3%E7%90%86%E8%AE%BF%E9%97%AE/
+[2] http://u5a.cn/JeNvq
