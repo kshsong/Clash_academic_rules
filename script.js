@@ -1,5 +1,14 @@
 // Define main function (script entry)
 function main(config) {
+    // ！！！！ DIRECT 使用systemDNS配置 ！！！！
+  if (!config.dns){
+    config.dns = {};
+  }
+
+  config.dns["direct-nameserver"] = ["system"];
+  config.dns["direct-nameserver-follow-policy"] = false;
+
+  
   // 读取现有的规则
   let oldRules = config.rules;
 

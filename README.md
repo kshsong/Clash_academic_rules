@@ -46,6 +46,22 @@ no-resolve：防止域名解析影响代理设置。
 
 ![启用-全局扩展脚本](全局扩展脚本-3.png)
 
+### DIRECT DNS 兼容性
+
+部分订阅会启用 Clash/Mihomo 的自定义 DNS、DoH 或 Fake-IP。
+在这种情况下，即使命中 `DIRECT` 规则，域名仍可能由 Mihomo
+配置的 DNS 解析，而不是使用系统 DNS。
+
+这可能导致部分学术网站（例如 ScienceDirect）出现
+`ERR_CONNECTION_CLOSED` 等直连异常。
+
+脚本中增加：
+
+```yaml
+direct-nameserver:
+  - system
+direct-nameserver-follow-policy: false
+
 
 ## 参考资料
 
