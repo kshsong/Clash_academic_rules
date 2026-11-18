@@ -93,6 +93,8 @@ function main(config) {
     "DOMAIN-SUFFIX,onlinelibrary.wiley.com,DIRECT", // 精确匹配平台域名
     // researchgate
     "DOMAIN-KEYWORD,researchgate,DIRECT",
+    // TVST (Translational Vision Science & Technology) manuscript submission
+    "DOMAIN,tvst.msubmit.net,DIRECT",
     // == 支持性服务 & CDN ==
     "DOMAIN-KEYWORD,disqus,DIRECT", // 评论系统 (如 acm-prod.disqus.com)
     "DOMAIN-SUFFIX,disqus.com,DIRECT",
